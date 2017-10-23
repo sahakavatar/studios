@@ -18,9 +18,9 @@
     {!! HTML::style('/resources/assets/js/animate/css/animate.css') !!}
     {!! HTML::style('/app/Modules/Studios/Resources/Views/assets/css/styles.css?v=50') !!}
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    {!! \App\Modules\Studios\Models\Studios::linkAllCss() !!}
-    {!! \App\Modules\Studios\Models\Studios::linkAllCssByType($type) !!}
-    {!! \App\Modules\Studios\Models\Studios::linkAllCssByStudio($type,$studio) !!}
+    {!! \Sahakavatar\Studios\Models\Studios::linkAllCss() !!}
+    {!! \Sahakavatar\Studios\Models\Studios::linkAllCssByType($type) !!}
+    {!! \Sahakavatar\Studios\Models\Studios::linkAllCssByStudio($type,$studio) !!}
     <script src="/resources/assets/js/jquery-2.1.4.min.js"></script>
 
     <script src="/resources/assets/js/jqueryui/js/jquery-ui.min.js"></script>
@@ -55,9 +55,9 @@
     {!! HTML::script('/resources/assets/js/media-lightbox.js') !!}
     {!! HTML::script('/resources/assets/js/less.js') !!}
 {!! HTML::script('/app/Modules/Studios/Resources/Views/assets/js/main.js?v=80') !!}
-{!! \App\Modules\Studios\Models\Studios::linkAllJs() !!}
-{!! \App\Modules\Studios\Models\Studios::linkAllJsByType($type) !!}
-{!! \App\Modules\Studios\Models\Studios::linkAllJsByStudio($type,$studio) !!}
+{!! \Sahakavatar\Studios\Models\Studios::linkAllJs() !!}
+{!! \Sahakavatar\Studios\Models\Studios::linkAllJsByType($type) !!}
+{!! \Sahakavatar\Studios\Models\Studios::linkAllJsByStudio($type,$studio) !!}
  {!! HTML::script('/resources/assets/js/bootstrap-select/js/bootstrap-select.min.js') !!}
     
 @yield('JS')

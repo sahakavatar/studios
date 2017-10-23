@@ -230,7 +230,7 @@
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                 <div class="main_div_1">
                     <div class="top_part_studio">
-                        <img src="{!! url('\app\Modules\Studios\Resources\Views\assets\img\green.png')!!}" alt=""
+                        <img src="{!! url('\Sahakavatar\Studios\Resources\Views\assets\img\green.png')!!}" alt=""
                              class="m-t-40">
                     </div>
                     <div class="bottom_part_studio">
@@ -241,7 +241,7 @@
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                 <div class="main_div_1">
                     <div class="top_part_studio">
-                        <img src="{!! url('\app\Modules\Studios\Resources\Views\assets\img\violet.png')!!}" alt=""
+                        <img src="{!! url('\Sahakavatar\Studios\Resources\Views\assets\img\violet.png')!!}" alt=""
                              class="m-t-40">
                     </div>
                     <div class="bottom_part_studio">

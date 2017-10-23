@@ -1,4 +1,4 @@
-<?php namespace App\Modules\Studios\Models;
+<?php namespace Sahakavatar\Studios\Models;
 
 /**
  * Created by PhpStorm.

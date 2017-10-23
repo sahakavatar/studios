@@ -6,14 +6,14 @@
  * Time: 3:02 PM
  */
 
-namespace App\Modules\Studios\Models;
+namespace Sahakavatar\Studios\Models;
 
 use App\Modules\Users\User;
 use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class StudioClasses
- * @package App\Modules\Studios\Models
+ * @package Sahakavatar\Studios\Models
  */
 class StudioClasses extends Model
 {

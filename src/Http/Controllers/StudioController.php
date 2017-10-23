@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Modules\Studios\Http\Controllers;
+namespace Sahakavatar\Studios\Http\Controllers;
 
 use App\helpers\dbhelper;
 use App\Modules\Framework\Models\Classes;
-use App\Modules\Studios\Models\StudioClasses;
+use Sahakavatar\Studios\Models\StudioClasses;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Modules\Studios\Models\Studios;
+use Sahakavatar\Studios\Models\Studios;
 
 class StudioController extends Controller
 {

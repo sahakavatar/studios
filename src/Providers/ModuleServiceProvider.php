@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\Studios\Providers;
+namespace Sahakavatar\Studios\Providers;
 
 use Caffeinated\Modules\Support\ServiceProvider;
 

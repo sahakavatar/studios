@@ -23,8 +23,8 @@
     <style id="savedcss" data-role="savedcss">
 
     </style>
-    {!! \App\Modules\Studios\Models\Studios::linkAllCss() !!}
-    {!! \App\Modules\Studios\Models\Studios::linkAllCssByType($type) !!}
+    {!! \Sahakavatar\Studios\Models\Studios::linkAllCss() !!}
+    {!! \Sahakavatar\Studios\Models\Studios::linkAllCssByType($type) !!}
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <script src="/resources/assets/js/jquery-2.1.4.min.js"></script>
 
@@ -53,8 +53,8 @@
     {!! HTML::script('/resources/assets/js/underscore-min.js') !!}
     {!! HTML::script('/resources/assets/js/ace-editor/ace.js') !!}
     {!! HTML::script('/app/Modules/Studios/Resources/Views/assets/js/studio-plugin-new.js?=v0.7') !!}
-{!! \App\Modules\Studios\Models\Studios::linkAllJs() !!}
-{!! \App\Modules\Studios\Models\Studios::linkAllJsByType($type) !!}
+{!! \Sahakavatar\Studios\Models\Studios::linkAllJs() !!}
+{!! \Sahakavatar\Studios\Models\Studios::linkAllJsByType($type) !!}
 <input  data-pagetype value="{!! $type !!}">
 <input  data-callback="save" value="{!! $data['call_back'] or null!!}">
 <input  data-section="save" value="{!! $data['section'] or null!!}">
