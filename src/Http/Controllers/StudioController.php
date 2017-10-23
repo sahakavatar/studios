@@ -15,29 +15,29 @@ class StudioController extends Controller
 {
     public function getIndex(Request $request)
     {
-        $type = $request->get('type','versions');
+        $type = $request->get('type', 'versions');
         $groups = Studios::getGroupsList();
         $data = Studios::getStudiosByGroup($type);
-        return view("studios::index",compact(['groups','type','data']));
+        return view("studios::index", compact(['groups', 'type', 'data']));
     }
 
-    public function renderStudio(Request $request,$type,$studio)
+    public function renderStudio(Request $request, $type, $studio)
     {
-        $data=$request->except('_token');
+        $data = $request->except('_token');
 //        if(!isset($data['json_data']) || !isset($data['css_data'])) {
 //            abort(404);
 //        }
         $elements = Studios::$elements;
         $globals = Classes::$getGlobalClasses;
         $elementCollectiom = Classes::$collectionsMenuItems;
-        if(! \File::exists(Studios::$viewFolderPath.DS.$type.DS.$studio.'.blade.php')) abort(404);
-        return view("studios::studios.$type.$studio",compact(['type','studio','data','elementCollectiom','elements','globals']));
+        if (!\File::exists(Studios::$viewFolderPath . DS . $type . DS . $studio . '.blade.php')) abort(404);
+        return view("studios::studios.$type.$studio", compact(['type', 'studio', 'data', 'elementCollectiom', 'elements', 'globals']));
     }
 
     public function getStudioClasses(Request $request)
     {
         $data_edit = $request->except('_token');
-        $call_back=$request->get('call_back',url('/admin/studios/save-class'));
+        $call_back = $request->get('call_back', url('/admin/studios/save-class'));
         $studio = $request->studio;
         $elements = Studios::$elements;
         $globals = Classes::$getGlobalClasses;
@@ -47,7 +47,7 @@ class StudioController extends Controller
         $type = $request->get('type');
         $studioView = isset(Studios::$studioView[$studio][$tag]) ? Studios::$studioView[$studio][$tag] : Studios::$studioView[$studio]['default'];
 
-        return view("studios::Classes.$studio", compact(['tag', 'type', 'tags', 'globals', 'elements', 'studioView', 'section','call_back','elementCollectiom', 'data_edit']));
+        return view("studios::Classes.$studio", compact(['tag', 'type', 'tags', 'globals', 'elements', 'studioView', 'section', 'call_back', 'elementCollectiom', 'data_edit']));
     }
 
     public function getComponentClasses(Request $request)
