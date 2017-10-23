@@ -1,0 +1,218 @@
+<!-- for date and time picker -->
+<div  data-input-settings="datetimepicker">
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-3 p-t-10 p-b-10 m-t-5 p-l-30">
+            <label  for="name">I want to have </label>
+        </div>
+        <div class="col-xs-6 col-md-6 col-lg-2 p-t-10 p-b-10 ">
+            <div class="customelement">
+                <input type="checkbox" name="date" id="date_picker" value="date">
+                <label for="date_picker">Date</label>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-6 col-lg-4 p-t-10 p-b-10 ">
+            <div class="customelement">
+                <input type="checkbox" name="time" id="time_picker" value="time">
+                <label for="time_picker">Time</label>
+            </div>
+        </div>
+    </div>
+    <div data-datetimepicker="date">
+        <div class="row ">
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5  p-l-30">
+                <label  for="enableRequired"> Date Format</label>
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-6 p-t-10 p-b-10">
+                <select id="list_source_date"  class="form-control customselect"  data-style="btn-black" data-html="list_source_date" data-key="field" data-selector="list_source_date" title="Select Date">
+                    <option value="dd_mm_yy" >DD/MM/YY</option>
+                    <option value="dd_mm_yyyy" >DD/MM/YYYY</option>
+                    <option value="mm_dd_yy" >MM/DD/YY</option>
+                    <option value="mm_dd_yyyy" >MM/DD/YYYY</option>
+                </select>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5  p-l-30">
+                <label> Start/End Dates</label>
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-1 p-t-10 p-b-10 m-t-5">
+                <label> From</label>
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10">
+                <input type="text" class="form-control " placeholder=""  >
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-1 p-t-10 p-b-10 m-t-5">
+                <label> To</label>
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10">
+                <input type="text" class="form-control " placeholder=""  >
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5  p-l-30">
+                <label> Selected Days</label>
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10">
+                <input type="text" class="form-control " placeholder=""  >
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-1 p-t-10 p-b-10 m-t-5">
+                <label> And</label>
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10">
+                <input type="text" class="form-control " placeholder=""  >
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-2 p-t-10 p-b-10">
+                <button type="button" class=" btn btn-block p-l-0 p-r-0 uploadButton ">Upload File</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5  p-l-30">
+                <label> Exclude Days</label>
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10">
+                <input type="text" class="form-control " placeholder=""  >
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-1 p-t-10 p-b-10 m-t-5">
+                <label> And</label>
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10">
+                <input type="text" class="form-control " placeholder=""  >
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-2 p-t-10 p-b-10">
+                <button type="button" class=" btn btn-block p-l-0 p-r-0 uploadButton ">Upload File</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5  p-l-30">
+                <label> My Logic</label>
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-6 p-t-10 p-b-10">
+                <input type="text" class="form-control " placeholder=""  >
+            </div>
+        </div>
+    </div>
+    <div data-datetimepicker="time">
+        <div class="row  b-t-1">
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5  p-l-30">
+                <label> Time Format</label>
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-6 p-t-10 p-b-10">
+                <select id="list_source_date"  class="form-control customselect"  data-style="btn-black" data-html="list_source_date" data-key="field" data-selector="list_source_date" title="Select Date">
+                    <option value="hh_mm_ss" >hh:mm:ss</option>
+                    <option value="hh_mm_ss" >hh:mm:ss a</option>
+                    <option value="hh_mm_ss" >hh:mm:ss A</option>
+                    <option value="hh_mm_ss" >hh:mm a</option>
+                </select>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5  p-l-30">
+                <label> Start/End Dates</label>
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-1 p-t-10 p-b-10 m-t-5">
+                <label> From</label>
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10">
+                <input type="text" class="form-control " placeholder=""  >
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-1 p-t-10 p-b-10 m-t-5">
+                <label> To</label>
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10">
+                <input type="text" class="form-control " placeholder=""  >
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5  p-l-30">
+                <label> Selected Days</label>
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10">
+                <input type="text" class="form-control " placeholder=""  >
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-1 p-t-10 p-b-10 m-t-5">
+                <label> And</label>
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10">
+                <input type="text" class="form-control " placeholder=""  >
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-2 p-t-10 p-b-10">
+                <button type="button" class=" btn btn-block p-l-0 p-r-0 uploadButton ">Upload File</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5  p-l-30">
+                <label> Exclude Days</label>
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10">
+                <input type="text" class="form-control " placeholder=""  >
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-1 p-t-10 p-b-10 m-t-5">
+                <label> And</label>
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10">
+                <input type="text" class="form-control " placeholder=""  >
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-2 p-t-10 p-b-10">
+                <button type="button" class=" btn btn-block p-l-0 p-r-0 uploadButton ">Upload File</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5  p-l-30">
+                <label> My Logic</label>
+            </div>
+            <div class="col-xs-6 col-md-6 col-lg-6 p-t-10 p-b-10">
+                <input type="text" class="form-control " placeholder=""  >
+            </div>
+        </div>
+    </div>
+    <div class="row b-t-1">
+        <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5  p-l-30">
+            <label> Calander Options</label>
+        </div>
+        <div class="col-xs-6 col-md-6 col-lg-4 p-t-10 p-b-10 ">
+            <div class="customelement">
+                <input type="checkbox" id="preload_date_time">
+                <label for="preload_date_time">Preload Date/Time</label>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-6 col-lg-4 p-t-10 p-b-10">
+            <input type="text" class="form-control " placeholder=""  >
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-3 p-t-10 p-b-10 m-t-5 p-l-30"> </div>
+        <div class="col-xs-6 col-md-6 col-lg-4 p-t-10 p-b-10 ">
+            <div class="customelement">
+                <input type="checkbox"  id="add_calander_icon">
+                <label for="add_calander_icon">Add Calander Icon</label>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-6 col-lg-4 p-t-10 p-b-10 ">
+            <div class="customelement">
+                <input type="checkbox" id="add_rest_button">
+                <label for="add_rest_button">Add Rest Button</label>
+            </div>
+        </div>
+    </div>
+    <div class="row b-t-1">
+        <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5  p-l-30">
+            <label> Display Options</label>
+        </div>
+        <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10">
+            <div class="customelement">
+                <input type="checkbox"  id="inline_calander">
+                <label for="inline_calander">Inline Calander</label>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-6 col-lg-2 p-t-10 p-b-10">
+            <div class="customelement">
+                <input type="checkbox"  id="onclick_calander">
+                <label for="onclick_calander">On Click</label>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-6 col-lg-4 p-t-10 p-b-10">
+            <input type="text" class="form-control " placeholder=""  >
+        </div>
+    </div>
+</div>
+<!-- for date and time picker --> 

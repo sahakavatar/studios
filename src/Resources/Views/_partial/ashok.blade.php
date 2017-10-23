@@ -1,0 +1,1 @@
+{!! $data['css_data'] or '<div>No Blade file found</div>' !!}   

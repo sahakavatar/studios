@@ -1,0 +1,445 @@
+{
+  "input":{
+      "type":"field",
+	  "types":"text",
+      "text":"Input",
+      "target":"inputsetting",
+      "class":"fa fa-minus",
+      "html":"<input id='singleline' class='form-control' type='text' name='singleline' placeholder='singleline'>",
+      "allowsub":true,
+      "function":{
+            "validation":false,
+            "validationType":"all",
+            "sources":false,
+            "repeated":true
+      },
+      "options":"general.html",
+      "sub":{
+         "input":{
+              "type":"input",
+              "ftype":"text",
+              "target":"inputsetting",
+              "text":"Input",
+              "class":"",
+              "html":"" 
+          }
+      },
+      "tabs":["setting","container","text","field"]
+   },
+   "custom_input":{
+      "type":"field",
+	  "types":"text",
+      "text":"Custom Input",
+	   
+      "target":"inputsetting",
+      "class":"fa fa-minus",
+      "html":"<input id='custom_input' class='form-control' type='text' name='custom_input' placeholder=''>",
+      "allowsub":true,
+      "function":{
+            "validation":false,
+            "validationType":"all",
+            "sources":false,
+            "repeated":true
+      },
+      "options":"custominput-option.html",
+      "sub":{
+         "input":{
+              "type":"input",
+              "ftype":"text",
+              "target":"inputsetting",
+              "text":"Custom Input",
+              "class":"",
+              "html":"" 
+          }
+      },
+      "tabs":["setting","container","text","field"]
+      
+   },
+   "textarea":{
+      "type":"field",
+	  "types":"textarea",
+      "text":"Textarea",
+      "class":"fa fa-align-justify",
+      "target":"inputsetting",
+      "html":"<textarea placeholder='textarea' name='textarea' class='form-control'></textarea>",
+      "function":{
+            "validation":false,
+            "validationType":"all",
+            "sources":false,
+            "repeated":true
+      },
+      "options":"textarea-option.html",
+      "tabs":["setting","container","text","field"]
+   },
+   "select":{
+      "type":"select",
+	  "types":"select", 
+      "text":"Select",
+      "target":"inputsetting",
+      "class":"fa fa-arrow-down",
+      "html":"<select data-content='Please select an option' class='form-control' name='select'><option selected='selected' value='0'>--- Select ---</option><option value='Option 1'>Option 1</option><option value='Option 2'>Option 2</option><option value='Option 3'>Option 3</option></select>",
+      "options":"select-option.html",
+      "function":{
+            "validation":false,
+            "validationType":"all",
+            "sources":true,
+            "sourcesType":"costom",
+            "repeated":true
+      },
+      "tabs":["setting","container","text","field"]
+   },
+   "multiselect":{
+      "type":"multiselect",
+	  "types":"select", 
+      "text":"Multi Select",
+      "target":"inputsetting",
+      "class":"fa fa-sort-amount-desc",
+      "html":"<select data-content='Please select an option' class='form-control' name='selectmultiple' multiple ><option selected='selected' value='0'>--- Select ---</option><option value='Option 1'>Option 1</option><option value='Option 2'>Option 2</option><option value='Option 3'>Option 3</option></select>",
+     "options":"multiselect-option.html",
+      "function":{
+            "validation":false,
+            "validationType":"all",
+            "sources":true,
+            "sourcesType":"costom",
+            "repeated":false
+      },
+      "tabs":["setting","container","text","field"]
+   },
+   "radio":{
+      "type":"radio",
+      "text":"Radio",
+	  "types":"radio", 
+      "target":"inputsetting",
+      "class":"fa fa-dot-circle-o",
+      "html":"<div class='radio checkbox'> <input type='radio' value='Redio 1' id='optionsRadios1' name='optionsRadios'><label for='optionsRadios1'> Redio 1</label></div><div class='radio checkbox'> <input type='radio' value='Redio 2' id='optionsRadios2' name='optionsRadios'><label for='optionsRadios2'> Redio 2 </label></div><div class='radio checkbox'> <input type='radio' value='Redio 3' id='optionsRadios3' name='optionsRadios'><label for='optionsRadios3'> Redio 3 </label></div>",
+      "options":"radio-option.html",
+      "function":{
+            "validation":false,
+            "validationType":"all",
+            "sources":true,
+            "sourcesType":"costom",
+            "repeated":false
+      },
+      "tabs":["setting","container","text","field"]
+   },
+   "checkbox":{
+      "type":"checkbox",
+	  "types":"checkbox",
+      "text":"Checkbox",
+      "class":"fa fa-check-square-o",
+      "target":"inputsetting",
+      "html":"<div class='checkbox'><input type='checkbox' id='checkboxid' value='checkbox 1'><label for='checkboxid'> checkbox 1 </label></div><div class='checkbox'><input type='checkbox' id='checkboxid2' value='checkbox 2'><label for='checkboxid2'> checkbox 1 </label></div>",
+      "options":"checkbox-option.html",
+      "function":{
+            "validation":false,
+            "validationType":"all",
+            "sources":true,
+            "sourcesType":"costom",
+            "repeated":false
+      },
+      "tabs":["setting","container","text","field"]
+   },
+   "spinner-input":{
+      "type":"field",
+	  "types":"spinner-input", 
+      "text":"Spinner Input",
+      "target":"inputsetting",
+      "class":"fa fa-exchange fa-rotate-90",
+      "html":"<div class='input-group'><span class='input-group-addon' ><i data-role='previewicon' class='fa fa-plus'></i></span><input type='text' class='form-control' placeholder='Username' aria-describedby='basic-addon1'><span class='input-group-addon'><i data-role='previewicon' class='fa fa-minus'></i></span></div>",
+       "allowsub":true,
+      "options":"spinner-input.html",
+      "function":{
+            "validation":false,
+            "validationType":"sippiner",
+            "sources":false,
+            "repeated":false
+      },
+      "sub":{
+         "input":{
+              "type":"input",
+              "ftype":"text",
+              "target":"inputsetting",
+              "text":"Input",
+              "class":"",
+              "group":"spinner"
+          },
+          "plus":{
+              "type":"icon",
+              "target":"icon",
+              "text":"",
+              "class":"fa fa-plus" ,
+              "group":"spinner"
+          },
+          "mins":{
+              "type":"icon",
+              "text":"",
+              "class":"fa fa-minus",
+              "group":"spinner" 
+          }
+      },
+      "tabs":["setting","container","text"]
+   },
+   "password":{
+      "type":"field",
+      "text":"Password",
+	  "types":"password", 
+      "target":"inputsetting",
+      "class":"fa fa-key",
+      "html":"<input class='form-control' type='password' name='password' placeholder='password'>",
+       "allowsub":true,
+      "options":"general.html",
+      "function":{
+            "validation":false,
+            "validationType":"all",
+            "sources":false,
+            "repeated":true
+      },
+      "sub":{
+         "password":{
+              "type":"input",
+              "target":"inputsetting",
+              "ftype":"password",
+              "text":"Input",
+              "class":"",
+              "html":"" 
+          }
+      },
+      "tabs":["setting","container","text","field"]
+   },
+   "email":{
+      "type":"field",
+      "text":"Email",
+	  "types":"email",  
+      "class":"fa fa-envelope-o",
+      "target":"inputsetting",
+      "html":"<input class='form-control' type='email' name='email' placeholder='email'>",
+       "allowsub":true,
+      "options":"email-option.html",
+      "function":{
+            "validation":false,
+            "validationType":"email",
+            "sources":false,
+            "repeated":true
+      },
+      "sub":{
+         "email":{
+              "type":"input",
+              "ftype":"email",
+              "target":"inputsetting",
+              "text":"Email",
+              "class":"",
+              "html":"" 
+          }
+      },
+      "tabs":["setting","container","text","field"]
+   },
+   "phone":{
+      "type":"field",
+      "text":"Phone",
+	  "types":"tel", 
+      "target":"inputsetting",
+      "class":"fa fa-phone",
+      "html":"<input class='form-control' type='tel' name='phone' placeholder='phone'>",
+       "allowsub":true,
+      "options":"general.html",
+      "function":{
+            "validation":false,
+            "validationType":"phone",
+            "sources":false,
+            "repeated":true
+      },
+      "sub":{
+         "phone":{
+              "type":"input",
+              "ftype":"tel",
+              "target":"inputsetting",
+              "text":"Input",
+              "class":"",
+              "html":"" 
+          }
+      },
+      "tabs":["setting","container","text","field"]
+   },
+   "file":{
+      "type":"field",
+      "text":"File",
+	  "types":"file", 
+      "class":"fa fa-file",
+      "target":"inputsetting",
+      "html":"<input class='form-control' type='file' name='file' placeholder='file'>",
+       "allowsub":true,
+      "options":"file-option.html",
+       "function":{
+            "validation":false,
+            "validationType":"all",
+            "sources":false,
+            "repeated":false
+      },
+      "sub":{
+         "file":{
+              "type":"input",
+              "ftype":"file",
+              "target":"inputsetting",
+              "text":"Input",
+              "class":"",
+              "html":"" 
+          }
+      },
+      "tabs":["setting","container","text"]
+   },
+   "color":{
+      "type":"field",
+      "target":"inputsetting",
+      "text":"Color",
+	  "types":"text", 
+      "class":"fa fa-paint-brush",
+      "html":"<div class='input-group colorpicker-component'><input type='text' value='#00AABB' name='color' class='form-control' /><span class='input-group-addon'><i></i></span></div>",
+      "script":"<script>$(function() { $('.colorpicker-component').colorpicker(); });</script>",
+      "options":"colorpicker-option.html",
+      "function":{
+            "validation":false,
+            "sources":false,
+            "repeated":false
+      },
+      "tabs":["setting","container","text"]
+   },
+   "url":{
+      "type":"field",
+      "text":"URL",
+	  "types":"url",  
+      "class":"fa fa-link",
+      "html":"<input class='form-control' type='url' name='url' >",
+       "allowsub":true,
+      "options":"url-option.html",
+      "function":{
+            "validation":false,
+            "validationType":"url",
+            "sources":false,
+            "repeated":false
+      },
+      "sub":{
+         "url":{
+              "type":"input",
+              "ftype":"url",
+              "target":"inputsetting",
+              "text":"Input",
+              "class":"",
+              "html":"" 
+          }
+      },
+      "tabs":["setting","container","text","field"]
+   },
+   "button":{
+      "type":"button",
+      "text":"Button",
+	  "types":"button",  
+      "target":"inputsetting",
+      "class":"fa fa-send",
+      "html":"<input class='form-control' value='Button' type='button' name='button' placeholder='button'>",
+      "options":"button-option.html",
+      "function":{
+            "validation":false,
+            "sources":false,
+            "repeated":false
+      },
+      "tabs":["setting","container","text", "button"]
+   },
+   "datepicker":{
+      "type":"datepicker",
+      "text":"Date",
+	  "types":"datepicker", 
+      "class":"fa fa-calendar",
+      "target":"inputsetting",
+      "html":"<input class='form-control flatpickr' data-date-format='d-m-Y'>",
+      "script":"<script>$('.flatpickr').flatpickr();</script>",
+      "options":"datetimepicker.html",
+      "function":{
+            "validation":false,
+            "validationType":"all",
+            "sources":false,
+            "repeated":false
+      },
+      "tabs":["setting","container","text"]
+   },
+   "timepicker":{
+      "type":"timepicker",
+      "text":"Time",
+	  "types":"timepicker", 
+      "class":"fa fa-clock-o",
+      "target":"inputsetting",
+      "html":"<input class='form-control timepicker'  type='input' readonly name='timepicker' placeholder='h:i:s a'>",
+      "script":"<script>$('.timepicker').datetimepicker({pickDate: false, format:'hh:mm A'});</script>",
+      "options":"general.html",
+      "function":{
+            "validation":false,
+            "validationType":"all",
+            "sources":false,
+            "repeated":false
+      },
+      "tabs":["setting","container","text","field"]
+   },
+   "slider":{
+      "type":"slider",
+      "text":"Slider",
+	  "types":"slider", 
+      "class":"fa fa-sliders",
+      "target":"inputsetting",
+      "html":"<input id='ex1Slider' type='text'  />",
+      "script":"<script>  $('#ex1Slider').bootstrapSlider(); </script> ",
+      "scriptCode":"$('#ex1Slider').bootstrapSlider({settings}); ",
+      "options":"slider-option.html",
+      "function":{
+            "validation":false,
+            "validationType":"all",
+            "sources":false,
+            "repeated":false
+      },
+      "tabs":["setting","container","text"]
+   },
+   "rating":{
+      "type":"rating",
+      "text":"Rating",
+	  "types":"rating",  
+      "class":"fa fa-star",
+      "target":"inputsetting",
+      "html":"<input id='rating' name='rating' type='number' class='rating' min='1' max='10'  >",
+      "script":"<script>$('#rating').rating();</script>",
+      "options":"rating-option.html",
+      "function":{
+            "validation":false,
+            "sources":false,
+            "repeated":false
+      },
+      "tabs":["setting","container","text"]
+   },
+  "international_telephone": {
+    "type":"international_telephone",
+    "text":"international Telephone",
+    "target":"inputsetting",
+	 "types":"tel",  
+    "class":"fa fa-phone",
+    "html":"<input type='tel' id='telephone' placeholder=''>",
+    "script":"<script>$('#telephone').intlTelInput();</script>",
+    "function":{
+      "validation":false,
+      "sources":false,
+      "repeated":false
+    },
+    "tabs":["setting","container","text"]
+  },
+  "tag_editor": {
+    "type":"tag_editor",
+    "text":"Tag Editor",
+    "class":"fa fa-tag",
+	"types":"tag",  
+    "target":"inputsetting",
+    "html":"<textarea id='tags'>Example Tag, another tag</textarea>",
+    "script":"<script>$('#tags').tagEditor();</script>",
+    "function":{
+      "validation":false,
+      "sources":false,
+      "repeated":false
+    },
+    "tabs":["setting","container","text"]
+  }
+}

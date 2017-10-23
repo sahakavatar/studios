@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mappgin HTMl</title>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+
+<style>
+
+
+.mappingclearfix:after {  content: "."; display:block; font-size:0; line-height:0; height:0; clear:both; visibility:hidden; }
+.mappingclearfix { display:inline-block; }		
+* html .mappingclearfix { height:1%; }
+.mappingclearfix { display:block; }
+
+.mappingBottom {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #242424; color:#bfbfbf;  font:14px/18px Helvetica, Arial, sans-serif;
+}
+.mappingContainer{ padding:10px; border-bottom:solid 1px #191919; text-align:center}
+.mappginButton{ display:inline-block; padding:5px; line-height:24px; background:#337ab7; font-size:14px; border:solid 1px #2e6da4; border-radius:5px; color:#FFF; cursor:pointer; margin:0 2px}
+.mappingBottom select, .mappingBottom textarea{webkit-appearance: menulist;
+    box-sizing: border-box;
+    cursor: default;
+    height: 30px;
+    padding: 0px 12px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; font-family:Helvetica, Arial, sans-serif}
+	.mappingBottom textarea{ min-height:75px; line-height:18px; }
+	.mappingBottom label{ vertical-align:top}
+	
+.mappingLeft { float:right}
+.mappginButton .fa-arrow-up{   -webkit-transition: all 0.5s; /* Safari */
+    transition: all 1s; }
+.mpull-left{ float:left; text-align:left}
+.mpull-right{ float:right; text-align:right}
+.mappingActiev .fa-arrow-up{ -ms-transform: rotate(180deg); /* IE 9 */  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */ transform: rotate(180deg);}
+.mappingOption{ display:none;}
+.mappingToggle{ padding:5px 0 10px;  background:#2e2e2e;}
+.mappingoptionBtn{ text-align:center;  background:none; padding:0 0 10px}
+.mappginButtonlin{ background:none; border:0; color:#bfbfbf; font-size:18px; width:35px; text-align:center; line-height:34px; min-height:34px;}
+.mappginButtonlin.mappingActiev { background-color:#131313; box-shadow:0 0 2px rgba(255,255,255,0.2)}
+.mappingoptioncontainer{ text-align:center; padding:8px }
+.mappingHide{ display:none;}
+
+.mappingTol { width:30%;}
+
+.guestbutton{ opacity:0.5}
+.activeGuest{ opacity:1;}
+
+</style>
+<script src="../../../public/js/jquery-2.1.4.min.js"></script>
+
+<script>
+$(function(){
+	$('[data-mapping-action="toggle"]').click(function(){
+		if($(this).hasClass('mappingActiev')){
+			$(this).removeClass('mappingActiev');
+			$('[data-option]').removeClass('mappingActiev')
+			$('[data-mapping-container="toggle"]').slideUp()
+		}else{
+			$(this).addClass('mappingActiev');
+			$('[data-mapping-container="toggle"]').slideDown()
+		}
+	});
+	
+	$('[data-option]').click(function(){
+		var getdata = $(this).data('option');
+		if($('button[data-option="'+getdata+'"]').hasClass('mappingActiev')){
+			$('[data-option]').removeClass('mappingActiev')
+			$('[data-mapping-action="toggle"]').removeClass('mappingActiev')
+			$('[data-mapping-container="toggle"]').slideUp()
+		}else{
+			$('[data-option]').removeClass('mappingActiev')
+			$('[data-option="'+getdata+'"]').addClass('mappingActiev')
+			$('[data-mapping-action="toggle"]').addClass('mappingActiev')
+			$('[data-option-toggle]').addClass('mappingHide');
+			$('[data-option-toggle="'+getdata+'"]').removeClass('mappingHide')
+			$('[data-mapping-container="toggle"]').slideDown()
+		}
+	})
+	
+	$('.guestbutton').click(function(){
+		if($('[data-role="guestuser"]').is(':checked')){
+			$('.guestbutton').removeClass('activeGuest')
+			$('[data-role="guestuser"]').prop('checked',false);
+		}else{
+			$('.guestbutton').addClass('activeGuest')
+			$('[data-role="guestuser"]').prop('checked',true);
+		}
+	})
+	guestuser()
+	function guestuser(){
+		if($('[data-role="guestuser"]').is(':checked')){
+			$('.guestbutton').addClass('activeGuest')
+		}else{
+			$('.guestbutton').removeClass('activeGuest')
+		}
+	}
+})
+</script>
+</head>
+
+<body>
+<a href="#" data-option="customiser">Open customiser</a>
+
+<div class="mappingBottom">
+<div data-mapping-container="toggle" class="mappingOption">
+  		<div class="mappingToggle">
+        	<div class="mappingoptionBtn">
+            	
+             </div>
+             
+             <div class="mappingoptioncontainer">
+             		<div data-option-toggle="customiser">
+                    	<label>Select Class:</label>
+                        <select name="authentication_type">
+                            <option value="0">Big header</option>
+                            <option value="1">Big header</option>
+                          </select> &nbsp; 
+                        <label>Select Class Variation:</label>
+                        <select name="authentication_type">
+                            <option value="0">Big header</option>
+                            <option value="1">Big header</option>
+                          </select>
+                    </div>
+                    
+                    <div data-option-toggle="mapping" class="mappingHide">
+                    	<label>Radio</label>
+                        <input type="radio" name="Radio">
+                        <label>Radio 1</label>
+                        <input type="radio" name="Radio">
+                        
+                    </div>
+                    
+                    <div data-option-toggle="content">
+                    	<label>Content</label>
+                        <textarea>
+                        	
+                        </textarea>
+                        
+                    </div>
+             </div>
+        </div>
+  </div>
+  <div class="mappingContainer mappingclearfix">
+  	<div class="mpull-right mappingTol">
+    <button type="button" class="mappginButton mappingLeft" data-mapping-action="toggle"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+    <button type="button" class="mappginButton mappingLeft">Save Varaition</button>
+    </div>
+    <button type="button" class="mappginButtonlin" data-option="customiser"><i class="fa fa-cogs" aria-hidden="true"></i></button>
+    <button type="button" class="mappginButtonlin" data-option="mapping"><i class="fa fa-map-pin" aria-hidden="true"></i></button>
+    <button type="button" class="mappginButtonlin" data-option="content"><i class="fa fa-text-width" aria-hidden="true"></i></button>
+    <div class="mpull-left mappingTol">
+    	<button type="button" class="mappginButton guestbutton">Guest</button>
+      	<input type="checkbox" name="guest" data-role="guestuser" hidden="">
+    </div>
+  </div>
+  
+</div>
+</body>
+</html>

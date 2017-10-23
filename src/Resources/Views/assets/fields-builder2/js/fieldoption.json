@@ -1,0 +1,19 @@
+{
+  "name":{
+      "json":{"htmloption":{"fieldType":"input","functions":{"info":{"name":"name","placeholder":"Enter name"}},"layers":{"mainContainer":{"column":[{"id":"5","rowid":"col_5","type":"text","text":"name","class":"fa fa-font blue"},{"id":"3","rowid":"field_3","type":"field","text":"Input","datakey":"input"}]}}},"fieldname":"Field Name"},
+      "html":"<div class='form-group datafrom' data-class='setting' data-type='input' data-size='col-sm-12'><div class='row'><div class='col-sm-6  column' data-fcontrol='label'>name</div><div class='col-sm-6  column' data-fcontrol='input'><input id='singleline' class='form-control' name='name' placeholder='Enter name' type='text'></div></div></div>"
+  },
+  "password":{
+      "json":{"htmloption":{"fieldType":"password","functions":{"info":{"placeholder":"Enter password"}},"layers":{"mainContainer":{"column":[{"id":"5","rowid":"col_5","type":"text","text":"Password","class":"fa fa-font blue"},{"id":"6","rowid":"field_6","type":"field","text":"Password","datakey":"password"}]}}},"fieldname":"Field Name"},
+      "html":"<div class='form-group datafrom' data-class='setting' data-type='password' data-size='col-sm-12'><div class='row'><div class='col-sm-6  column' data-fcontrol='label'>Password</div><div class='col-sm-6  column' data-fcontrol='input'><input class='form-control' name='password' placeholder='Enter password' type='password'></div></div></div>"
+  },
+  "email":{
+      "json":{"htmloption":{"fieldType":"email","functions":{"info":{"placeholder":"Enter you Email address"}},"layers":{"mainContainer":{"column":[{"id":"5","rowid":"col_5","type":"text","text":"Your Email","class":"fa fa-font blue"},{"id":"8","rowid":"field_8","type":"field","text":"Email","datakey":"email"}]}}},"fieldname":"Field Name"},
+      "html":"<div class='form-group datafrom' data-class='setting' data-type='email' data-size='col-sm-12'><div class='row'><div class='col-sm-6  column' data-fcontrol='label'>Your Email</div><div class='col-sm-6  column' data-fcontrol='input'><input class='form-control' name='email' placeholder='Enter you Email address' type='email'></div></div></div>"
+  },
+  "lastname":{
+      "json":{"htmloption":{"fieldType":"input","functions":{"info":{"name":"lastname","placeholder":"Last name"}},"layers":{"mainContainer":{"column":[{"id":"5","rowid":"col_5","type":"text","text":"Last name","class":"fa fa-font blue"},{"id":"10","rowid":"field_10","type":"field","text":"Input","datakey":"input"}]}}},"fieldname":"Field Name"},
+      "html":"<div class='form-group datafrom' data-class='setting' data-type='input' data-size='col-sm-12'><div class='row'><div class='col-sm-6  column' data-fcontrol='label'>Last name</div><div class='col-sm-6  column' data-fcontrol='input'><input id='singleline' class='form-control' name='lastname' placeholder='Last name' type='text'></div></div></div>"
+  }
+  
+}

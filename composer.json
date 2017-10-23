@@ -1,0 +1,17 @@
+{
+    "name": "sahak.avatar/studios",
+    "authors": [
+        {
+            "name": "Sahak",
+            "email": "hakobyan.sahak88@gmail.com"
+        }
+    ],
+    "type": "module",
+    "route": "framework",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sahakavatar\\Studios\\": "src/"
+        }
+    }
+}

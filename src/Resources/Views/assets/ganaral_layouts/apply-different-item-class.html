@@ -1,0 +1,506 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style data-role="savedcss" id="savedcss">
+.mycontainer {
+  background: #ac3838;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #2e0522;
+  border-radius: 19px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.buttonContainer {
+  background: #5040df;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #2e0522;
+  border-radius: 19px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.panelContainer {
+  background: #40df5d;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #0eab1e;
+  border-radius: 1px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.newcontainer {
+  border-color: #ababab;
+  border-width: 3px;
+  border-style: solid;
+  background: #807a7a;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.container3 {
+  background: linear-gradient(1deg, #535a16, #7f9214);
+  border-color: #7c7c1a;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.container3hover {
+  background: linear-gradient(1deg, #b6c348, #7f9214);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.menucontainer {
+  background: #a3a3a3;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.menu-button {
+  background: #1d3759;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.menu-childe-item-cont {
+  background: #16273d;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.ashoktext1 {
+  font-size: 17px;
+  color: #ffffff;
+}
+.text2 {
+  font-size: 26px;
+  color: #e2e2e2;
+  font-family: Times New Roman;
+}
+.text3 {
+  font-size: 24px;
+  color: #e2e2e2;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+}
+.text4 {
+  font-size: 21px;
+  color: #d86f96;
+  font-family: Trebuchet MS, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-style: normal;
+  letter-spacing: 6.5px;
+}
+.textblack {
+  color: #000000;
+}
+.menu-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 50px;
+}
+.menu-text-button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 50px;
+  color: #ffffff;
+}
+.ani-swing {
+  animation-name: swing;
+  animation-duration: 1.1s;
+  animation-delay: 0s;
+}
+.ani-shake {
+  animation-name: shake;
+  animation-duration: 1.2s;
+  animation-delay: 0s;
+}
+.ani-rubberband {
+  animation-name: rubberBand;
+  animation-duration: 1.2s;
+  animation-delay: 0s;
+}
+.fontcioon {
+  font: normal normal normal 14px/1 FontAwesome;
+}
+.iconclass:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: '\f042';
+  display: inline-block;
+  vertical-align: middle;
+  background: #16273d;
+  padding: 5px;
+  width: 54px;
+  height: 51px;
+  margin-right: 12px;
+  text-align: center;
+  line-height: 40px;
+}
+.iconclass2:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: '\f240';
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px;
+}
+.item1 {
+  background: #5040df;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #2e0522;
+  border-radius: 19px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: block;
+}
+.item1:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: '\f042';
+  display: inline-block;
+  vertical-align: middle;
+  background: #16273d;
+  padding: 5px;
+  width: 54px;
+  height: 51px;
+  margin-right: 12px;
+  text-align: center;
+  line-height: 40px;
+}
+.item1:hover {
+  background: #ac3838;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #2e0522;
+  border-radius: 19px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.item2 {
+  background: #ac3838;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #2e0522;
+  border-radius: 19px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 26px;
+  color: #e2e2e2;
+  font-family: Times New Roman;
+  display: block;
+}
+.item2:hover {
+  background: #5040df;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #2e0522;
+  border-radius: 19px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 26px;
+  color: #e2e2e2;
+  font-family: Times New Roman;
+}
+.item3 {
+  background: #ac3838;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #2e0522;
+  border-radius: 19px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 26px;
+  color: #e2e2e2;
+  font-family: Times New Roman;
+  display: block;
+}
+.item3:hover {
+  background: red;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #2e0522;
+  border-radius: 19px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 26px;
+  color: #e2e2e2;
+  font-family: Times New Roman;
+  animation-name: shake;
+  animation-duration: 1.2s;
+  animation-delay: 0s;
+}
+.button1 {
+  background: #a3a3a3;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  color: #000000;
+  display: block;
+}
+.button2 {
+  border-color: #ababab;
+  border-width: 3px;
+  border-style: solid;
+  background: #807a7a;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #000000;
+  display: block;
+}
+.button2:hover {
+  background: #a3a3a3;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.button4 {
+  background: linear-gradient(1deg, #535a16, #7f9214);
+  border-color: #7c7c1a;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #000000;
+  display: block;
+}
+.button4:hover {
+  background: linear-gradient(1deg, #b6c348, #7f9214);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.button4:active, .button4.active, .button4:focus {
+  background: linear-gradient(1deg, #535a16, #7f9214);
+  border-color: #7c7c1a;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.menu-button-item {
+  display: block;
+  background: #1d3759;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 50px;
+  color: #ffffff;
+}
+.menu-button-item:hover {
+  background: #1d3759;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.menu-Child-Item-button {
+  display: block;
+  background: #16273d;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.menu-Child-Item-button:hover {
+  background: #16273d;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.classname {
+  list-style: none;
+}
+.classname li {
+  position: relative;
+}
+.classname a {
+  background: #5040df;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #2e0522;
+  border-radius: 19px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: block;
+}
+.classname a:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: '\f042';
+  display: inline-block;
+  vertical-align: middle;
+  background: #16273d;
+  padding: 5px;
+  width: 54px;
+  height: 51px;
+  margin-right: 12px;
+  text-align: center;
+  line-height: 40px;
+}
+.classname a:hover {
+  background: #ac3838;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #2e0522;
+  border-radius: 19px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.classname ul {
+  list-style: none;
+}
+</style>
+<style>
+
+
+.vertNav_orange2 { background-color: #ff6400; font-family:"Lucida Sans" ; border:solid 1px #dddddd; padding-left:0; box-shadow:0 3px 10px rgba(0,0,0,0.15) }
+.vertNav_orange2 li { list-style:none; }
+.vertNav_orange2 li a { color:#FFF; display: block; text-decoration:none; border-top: solid 1px rgba(255,255,255,0.6); padding:12px 15px;  }
+.vertNav_orange2 li:first-child a { border-top:none; }
+.vertNav_orange2 li a:hover, .vertNav_orange2 li.active a { background-color: #d2d2d2; color:#FFF; }
+.vertNav_orange2 li.active a { background-color: #FF0000; font-weight: bold; }
+.vertNav_orange2 li ul { background-color: #FFF; padding-left:0;  }
+.vertNav_orange2 li ul li a { color:#ff6400; padding-left:30px; border-top-color:#CCC }
+
+.vertNav_orange2 a.item3 {
+  background: #ac3838;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #2e0522;
+  border-radius: 19px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 26px;
+  color: #e2e2e2;
+  font-family: Times New Roman;
+  display: block;
+}
+.vertNav_orange2 a.item3:hover {
+  background: red;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #2e0522;
+  border-radius: 19px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 26px;
+  color: #e2e2e2;
+  font-family: Times New Roman;
+  animation-name: shake;
+  animation-duration: 1.2s;
+  animation-delay: 0s;
+} 
+
+</style>
+</head>
+
+<body>
+
+<h1>item class </h1>
+<a href="/" target="" class="item3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Home</span><i class=" fa fa-angle-left pull-right arrow"></i></a>
+
+
+
+<h1 style="margin-top:100px;"> Apply Different item class on Home Button</h1>
+
+
+<ul class="nav vertNav_orange2">
+    <li class="dropdown"> <a href="/" target="" class="dropdown-toggle item3" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Home</span><i class=" fa fa-angle-left pull-right arrow"></i></a>
+        <ul class="dropdown-menu">
+        </ul>
+    </li>
+    <li class="dropdown"> <a href="/pages/features" target="" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Features</span><i class=" fa fa-angle-left pull-right arrow"></i></a>
+        <ul class="dropdown-menu">
+            <li class="dropdown"> <a href="/pages/services" target="" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Services</span><i class=" fa fa-angle-left pull-right arrow"></i></a>
+                <ul class="dropdown-menu">
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li class="dropdown"> <a href="/pages/contact" target="" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Contact Us</span><i class=" fa fa-angle-left pull-right arrow"></i></a>
+        <ul class="dropdown-menu">
+        </ul>
+    </li>
+    <li> <a href="Privacy" target=""><span>Privacy</span></a> </li>
+    <li> <a href="#" target=""><span>Custom Pages</span></a> </li>
+</ul>
+
+
+<h1 style="margin-top:100px;">menu css</h1>
+
+
+<ul class="nav vertNav_orange2">
+    <li class="dropdown"> <a href="/" target="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Home</span><i class=" fa fa-angle-left pull-right arrow"></i></a>
+        <ul class="dropdown-menu">
+        </ul>
+    </li>
+    <li class="dropdown"> <a href="/pages/features" target="" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Features</span><i class=" fa fa-angle-left pull-right arrow"></i></a>
+        <ul class="dropdown-menu">
+            <li class="dropdown"> <a href="/pages/services" target="" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Services</span><i class=" fa fa-angle-left pull-right arrow"></i></a>
+                <ul class="dropdown-menu">
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li class="dropdown"> <a href="/pages/contact" target="" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Contact Us</span><i class=" fa fa-angle-left pull-right arrow"></i></a>
+        <ul class="dropdown-menu">
+        </ul>
+    </li>
+    <li> <a href="Privacy" target=""><span>Privacy</span></a> </li>
+    <li> <a href="#" target=""><span>Custom Pages</span></a> </li>
+</ul>
+
+</body>
+</html>

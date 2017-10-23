@@ -1,0 +1,167 @@
+.f-left { float:left}
+.f-right { float:right}
+
+.colorBuilderPreview { background: #e2e2e2; }
+.previewCol { background:url(../img/transparent-bg.png) repeat 0 0; display: block; width:70%; height:316px; margin:60px auto 0; border:solid 8px #FFF; position: relative; }
+.previewCol div { position: absolute; top:0; right:0; bottom:0; left:0; }
+
+.editDesignCol { background: #3d3d3d;}
+
+.styleRow { padding:10px; vertical-align:middle}
+.styleRow .form-group { margin-left: 0; margin-right: 0;}
+
+.tabNavMenu { margin:12px 14px; box-shadow:none }
+.tabNavMenu li a { background-color: #292929; color:#f1f1f1; padding:10px 0; }
+.stepNav li a:before { border-width:4px; border-color:transparent}
+ 
+.tabNavMenu li a:hover, .tabNavMenu li a:focus, .tabNavMenu li.active a { background-color: #1c1c1c; }
+.stepNav li a:hover:before, .stepNav li a:focus:before, .stepNav li.active a:before { border-color:#468039; height:4px }
+
+.editDesignCol .form-control, .class-style-menu { background: #888383; color:#373737; }
+.class-style-icon { background: url(../img/class-style-icon.png) no-repeat 0 0; width:27px; height:27px; display:inline-block; vertical-align:middle; margin-right: 5px; }
+.bootstrap-select.btn-group .class-style-menu .caret { width:21px; height:34px; top:1px; right:-1px; background:url(../img/select-caret-black-arrow.png) no-repeat center center; background-color: rgba(106,106,106,0.59) ; border:none;  }
+.btn-cyan { background: #3f6b7a; color:#FFF }
+.btn-cyan:hover, .btn-cyan:focus { background: #295463; color:#FFF; }
+
+/* Angel Input */
+.angleIcon { vertical-align:middle; background: #8b8686; }
+.labelAngle { margin-right: 10px; }
+.ui-anglepicker { width:37px; height:37px; display:inline-block; -webkit-box-shadow: none; box-shadow: none; border:none; }
+.ui-anglepicker-dot, .ui-anglepicker-line { background: #292929; }
+
+.angleLeft { display:inline-block; margin-right: 10px; vertical-align:top}
+ .spinner { position: relative; width:80px; display:inline-block }
+.input-group-btn-vertical {  position: absolute; top:1px; right:19px;  white-space: nowrap;  width: 1%;  vertical-align: middle;  display: table-cell;}
+.input-group-btn-vertical > .btn {  display: block; background-color: rgba(61,61,61,0.25); color:#1c1c1c;  float: none;  width: 25px;  max-width: 100%;  padding:8px 10px;  margin-left: -1px;  position: relative;  border-radius: 0; border:none; }
+.input-group-btn-vertical > .btn:first-child { border-top-right-radius: 4px; }
+.input-group-btn-vertical > .btn:last-child { background-color: #626262; margin-top: 0;  border-bottom-right-radius: 4px; }
+.input-group-btn-vertical i {  position: absolute;  top: 0;  left: 5px; }
+
+/* Icons */
+.iconColor { background: url(../img/icon-color-sprite.png) no-repeat 0 0; display:inline-block; vertical-align:middle; overflow:hidden }
+.iconBorder { width:32px; height:32px; display:inline-block; border:solid 2px #FFF; border-radius:4px; text-align:center; line-height:27px; position: relative; }
+.iconColorRefresh { background-position:0 0; width:19px; height:19px; }
+.iconColorAdd { background-position:-20px 0; width:16px; height:16px; }
+
+.closeColorIcon { width:17px; height:17px; background-color: #fff; border-radius:100%; position: absolute; top:-10px; right:-10px; box-shadow:1px 1px 5px rgba(0,0,0,0.35); display: none; cursor:pointer; z-index:11; }
+.closeColorIcon:before { content:''; display:inline-block; width:9px; height:9px; background:url(../img/icon-color-sprite.png) no-repeat 0 -20px; position: absolute; top:50%; left:50%; margin:-4.5px 0 0 -4.5px }
+.activemaker .closeColorIcon { display: block; }
+
+.iconBorder.activemaker { box-shadow:0 0 0 6px #282828; z-index:200 }
+.colorChooseIcon1 { background: #3c5e7f; }
+.colorChooseIcon2 { background: #5acf43; }
+.colorPointer {  background:url(../img/transparent-bg.png) repeat; position: absolute; top:0; margin-left: -16px; margin-right:-16px;  }
+.pointfilecolor { position: absolute; top:0; left:0; bottom:0; right:0 }
+
+.transparent-bg { background:url(../img/transparent-bg.png) repeat; }
+.gradientWidth { padding-left:41px; position: relative; }
+.gradientLineHeight { height:32px; display: block; position: relative; } 
+.gradientBgLine { background: #3c5e7f; height:32px; display: block; border:solid 2px #FFF; position: relative; overflow:hidden } 
+.addmaker { position:absolute; bottom:0; width: 0;   height: 0;   border-left: 10px solid transparent;  border-right: 10px solid transparent; border-bottom: 10px solid #FFF; margin:0 0 0 -10px; }
+.gradientWidth .iconBorder.f-left { position: absolute; left:0; top:0}
+
+/* Color Select Box */
+.colorSelectBox { background-color: #292929; border-radius:4px; padding:14px 11px;}
+.colorSelectBox .form-control { background-color: #404040; color:#cccccc }
+.colorCodeDataList { margin-bottom: 11px; }
+.colorCodeDataList .form-group { margin-bottom: 11px; width:215px;}
+.colorCodeDataList .spinner { padding-left:20px; width:100px; }
+.colorCodeDataList .spinner label, .leftLabel label { position: absolute; top:0; left:0; line-height:34px; }
+.leftLabel { padding-left:20px; position: relative; }
+.colorSelectBox .input-group-btn-vertical { top:0; right:18px }
+.colorSelectBox .input-group-btn-vertical > .btn { background-color: #4f4f4f; padding:8.5px 10px; }
+.colorSelectBox .input-group-btn-vertical > .btn:last-child { background-color: #393838; }
+
+/* Opacity UI Slider */
+.opacitySlider label { display: block;}
+.opacitySlider { padding-right:60px; position: relative; padding-top:20px }
+.opacitySlider .form-control { width:49px; color:#FFF; position: absolute; bottom:0; right:0; margin-bottom: -16px; padding:6px; text-align:center }
+.horzSlider.ui-slider .ui-slider-handle { background-color: #467a3f; width:16px; height:16px; border:none; top:-7px; cursor:pointer }
+.horzSlider.ui-slider { height:2px; background-color: #686565; float:left; margin-top: 15px; margin-right: 12px; width:100%; }
+.ui-widget-header { background: #686565;} 
+
+.numberInput { padding-left:20px; position: relative; }
+.numberInput label { position: absolute; left:0; top:0; line-height:34px; }
+.numberInput .input-group-btn-vertical { right:17px; }
+
+.colorpicker-2x .colorpicker-saturation {
+              width: 196px;
+              height: 196px;
+          }
+      
+          .colorpicker-2x .colorpicker-hue,
+          .colorpicker-2x .colorpicker-alpha {
+              width: 20px;
+              height: 196px; margin-bottom:0;
+          }
+      
+          .colorpicker-2x .colorpicker-color,
+          .colorpicker-2x .colorpicker-color div {
+              height: 20px;
+          }
+
+.colorpicker { padding:2px; }
+.colorpicker-color { display: none;}
+.colorpicker-2x .colorpicker-hue, .colorpicker-2x .colorpicker-alpha { margin-left: 14px; border:solid 2px #FFF }
+.colorpicker.dropdown-menu { background-color: transparent; }
+.colorpicker-2x .colorpicker-saturation { border:solid 2px #FFF;}
+
+.colorpicker-saturation, .colorpicker-hue, .colorpicker-alpha { background-size:100% 196px; }
+
+.background-markup { font-size: 12px; line-height:12px }
+.background-markup .form-control { margin-bottom: 15px; }
+
+/*========== // Bootstrap 3 Media Queries ==========*/
+
+@media only screen and (max-width : 1350px) {
+.colorSelectBox { padding-left:0}
+.colorpicker-2x .colorpicker-hue, .colorpicker-2x .colorpicker-alpha { margin-left: 0; }
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+.angleData { margin-top: 15px; }
+.colorpicker-2x .colorpicker-hue, .colorpicker-2x .colorpicker-alpha { margin-left: 14px; } 
+.colorCodeDataList { padding-top:20px }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.previewCol { width:80%; height:275px; }
+
+.tabStepnav li { padding:0; float:left}
+.colorCodeDataList .form-group { width:auto; }
+.colorCodeDataList .spinner { width:48%; float:left; }
+.numberInput .horzSlider.ui-slider { margin-bottom: 15px; }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.previewCol { width:85%; height:300px; margin:0 auto 30px  }
+.styleRow.firstchild { margin-bottom: 0;}
+.styleRow { padding-left:0; padding-right:0}
+
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}
+
+
+
+
+
+
+
+
+

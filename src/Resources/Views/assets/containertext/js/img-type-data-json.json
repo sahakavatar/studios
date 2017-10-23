@@ -1,0 +1,26 @@
+// JSON Document
+
+    
+    {
+       "assest1": {
+            "width":"50%",
+            "display":"block",
+            "float":"left"
+        },
+       "assest2": {
+            "width":"50%",
+            "display":"block",
+            "float":"none",
+            "margin-left":"auto",
+            "margin-right":"auto"
+        },
+        "assest3": {
+            "width":"50%",
+            "display":"block",
+            "float":"right"
+        },
+        "assest4": {
+            "width":"100%",
+            "display":"block"
+        }
+  }

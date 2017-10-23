@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>General Layout</title>
+<link rel="stylesheet" href="css/general.css?v=0.9">
+<script src="../../../public/js/jquery-2.1.4.min.js"></script>
+<script>
+$(function(){
+	$('[data-order="pagelayout"]').val('0');
+	
+	var cssdata = {
+		layout:{
+			layout0:'',
+			layout1: '.generalsidebar_right{ order:0;}',
+			layout2: '.generalsidebar_right{ order:0; width:100%;}',
+			layout3: '.generalsidebar_right{ order:2; width:100%;}',
+			layout4: '.generalsidebar_left{ order: 2;}',
+			layout5: '.generalsidebar_left{ order: 2;} .generalsidebar_right{ order:0; }',
+			layout6: '.generalsidebar_right{ order:0; display:none;}',
+			layout7: ' .generalsidebar_left{ display:none;}',
+			layout8: '.generalsidebar_left{ width:100%;} .generalsidebar_right{ width:100%;}',
+			layout9: '.generalsidebar_left{ width:100%; order:2} .generalsidebar_right{ width:100%; }',
+			layout10: '.generalsidebar_left{ width:100%; order:2} .generalsidebar_right{ width:100%; order:1}',
+			layout11: '.generalsidebar_left{ width:100%; order:0} .generalsidebar_right{ width:100%; order:0}'
+			
+		},
+		mediacss:{},
+		viewclass:{}
+	}
+	cssdata.decktop = '0'
+	cssdata.tablet = '0'
+	cssdata.tabletportrait = '0'
+	cssdata.mobile = '0'
+	cssdata.mobileportrait = '0'
+	
+	cssdata.viewclass.lg = 'view-lg-0'
+	cssdata.viewclass.tl = 'view-tl-0'
+	cssdata.viewclass.tp = 'view-tp-0'
+	cssdata.viewclass.ml = 'view-ml-0'
+	cssdata.viewclass.mp = 'view-mp-0'
+	
+	
+	
+	$('[data-order="pagelayout"]').change(function(){
+		changelayout()
+	})
+	function changelayout(){
+		var getlaout = $('[data-order="pagelayout"]').val()
+		//$('body').removeAttr('class')
+		//$('body').addClass('pageLayout_'+getlaout)
+		$('#iframepreview').contents().find('body').removeAttr('class')
+		//$('#iframepreview').contents().find('body').addClass('pageLayout_'+getlaout)
+		
+		var getmode = $('[data-view].activebtn').data('mode')
+		var getmodeclass = $('[data-view].activebtn').data('modeclass')
+		var generatedcss = '';
+		
+		var newl = 'layout'+getlaout;
+		if(getmode=="decktop"){
+			generatedcss += '@media only screen and (min-width:1025px)  { '
+			generatedcss += cssdata.layout[newl];
+			generatedcss += '}'
+			
+		}else if(getmode=="tablet"){
+			generatedcss += '@media only screen and (min-width:801px) and (max-width: 1024px)  { '
+			generatedcss += cssdata.layout[newl];
+			generatedcss += '}'
+		}else if(getmode=="tabletportrait"){
+			generatedcss += '@media only screen and (min-width:769px) and (max-width: 800px)  { '
+			generatedcss += cssdata.layout[newl];
+			generatedcss += '}'
+		}else if(getmode=="mobile"){
+			generatedcss += '@media only screen and (min-width:401px) and (max-width: 768px)  { '
+			generatedcss += cssdata.layout[newl];
+			generatedcss += '}'
+		}else if(getmode=="mobileportrait"){
+			generatedcss += '@media only screen and (max-width: 400px)  { '
+			generatedcss += cssdata.layout[newl];
+			generatedcss += '}'
+		}
+		cssdata[getmode] = getlaout;
+		cssdata.viewclass[getmodeclass] = 'view-'+getmodeclass+'-'+getlaout;
+		cssdata.mediacss[getmode]= generatedcss;
+		runcss ()
+		
+	}
+	
+	function runcss (){
+		var classs = ''
+		
+		$.each(cssdata.viewclass, function(i,v){
+			classs +=v+' ';
+			
+		})
+		
+	//	$('#iframepreview').contents().find('body').removeAttr('class')
+		//$('#iframepreview').contents().find('body').addClass(classs)
+		
+		
+	}
+	
+	
+	changelayout();
+	
+	
+	$('[data-save="respsonivecss"]').click(function(){
+		var css = '';
+		$.each(cssdata.mediacss, function(i,v){
+			css +=v;
+		})
+		
+		
+	})
+	
+	$('[data-apply="class"]').click(function(){
+		$('#iframepreview').contents().find('body').removeAttr('class')
+		$('#iframepreview').contents().find('body').addClass($('[data-classvaleu="class"]').val())
+	})
+	
+	$('[data-view]').click(function(){
+		$('[data-view]').removeClass('activebtn')
+		$(this).addClass('activebtn')
+		var getsize = $(this).data('view')
+		var getmode = $(this).data('mode')
+		$('#iframepreview').width(getsize)
+		$('[data-order="pagelayout"]').val(cssdata[getmode]);
+	})
+})
+</script>
+</head>
+
+<body class="">
+
+
+<h1>Preview html</h1>
+
+<div class="preivewiframe">
+<iframe id="iframepreview" src="responsive-preview.html" scrolling="auto" width="1800"></iframe>
+</div>
+
+<div class="" style="padding:20px">
+<input style="width:50%" data-classvaleu="class"> <a href="#" class="btn " data-apply="class">ApplyClass</a>
+</div>
+
+<div class="toolbar">
+	<div class="">
+    	<a href="#" class="btn activebtn" data-view="1800" data-mode="decktop" data-modeclass="lg">Decktop</a>
+        <a href="#" class="btn" data-view="1024" data-mode="tablet" data-modeclass="tl">Tablet Landscape</a>
+        <a href="#" class="btn" data-view="800" data-mode="tabletportrait" data-modeclass="tp">Tablet Portrait</a>
+        <a href="#" class="btn" data-view="680" data-mode="mobile" data-modeclass="ml">mobile Landscape</a>
+        <a href="#" class="btn" data-view="400" data-mode="mobileportrait" data-modeclass="mp">Mobile Portrait</a>
+        &nbsp; 
+     <!--     <label>Page Layout</label>
+      <select data-order="pagelayout">
+        	<option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+        </select>-->
+        
+        
+    </div>
+    
+    
+    <div class="sliderbar">
+        
+        
+    </div>
+    
+</div>
+
+
+</body>
+</html>

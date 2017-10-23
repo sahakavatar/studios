@@ -1,0 +1,200 @@
+{
+  "all": {
+    "button":["basic","element"],
+    "text":["textstyling", "textshadow", "animation"],
+    "container":["contianers","background",  "background", "borderradius", "boxsahadow", "marginpadding"],
+    "core":["classes"]
+  },
+  "p":{
+    "button":["basic","element"],
+    "text":["textstyling", "textshadow", "animation"],
+    "core":["classes"]
+  },
+  "h1":{
+    "button":["basic","element"],
+    "text":["textstyling", "textshadow", "animation"],
+    "core":["classes"]
+  },
+  "h2":{
+    "button":["basic","element"],
+    "text":["textstyling", "textshadow", "animation"],
+    "core":["classes"]
+  },
+  "h3":{
+    "button":["basic","element"],
+    "text":["textstyling", "textshadow", "animation"],
+    "core":["classes"]
+  },
+  "h4":{
+    "button":["basic","element"],
+    "text":["textstyling", "textshadow", "animation"],
+    "core":["classes"]
+  },
+  "h5":{
+    "button":["basic","element"],
+    "text":["textstyling", "textshadow", "animation"],
+    "core":["classes"]
+  },
+  "h6":{
+    "button":["basic","element"],
+    "text":["textstyling", "textshadow", "animation"],
+    "core":["classes"]
+  },
+  "span":{
+    "button":["basic","element"],
+    "text":["textstyling", "textshadow", "animation"],
+    "core":["classes"]
+  },
+  "div":{
+    "button":["basic","element"],
+    "container":["contianers","background", "borderradius", "boxsahadow", "marginpadding"],
+    "core":["classes"]
+  },
+  "a":{
+    "button":["basic","element"],
+    "text":["textstyling", "textshadow", "animation"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "button":{
+    "button":["basic","element"],
+    "text":["textstyling", "textshadow", "animation"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "img":{
+    "button":["basic","element"],
+    "container":["contianer", "contianers","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "i":{
+    "button":["basic","element"],
+    "text":["textstyling", "textshadow", "animation"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "ul":{
+    "button":["basic","element"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "ol":{
+    "button":["basic","element"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "li":{
+    "button":["basic","element"],
+    "text":["textstyling", "textshadow", "animation"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "form":{
+    "button":["basic","element"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "label":{
+    "button":["basic","element"],
+    "text":["textstyling", "textshadow", "animation"],
+    "core":["classes"]
+  },
+  "input":{
+    "button":["basic","element"],
+    "text":["textstyling", "textshadow", "animation"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "textarea":{
+    "button":["basic","element"],
+    "text":["textstyling", "textshadow", "animation"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "select":{
+    "button":["basic","element"],
+    "text":["textstyling", "textshadow", "animation"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "table":{
+    "button":["basic","element"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "thead":{
+    "button":["basic","element"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "tbody":{
+    "button":["basic","element"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "tr":{
+    "button":["basic","element"],
+    "text":["textstyling", "textshadow", "animation"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "th":{
+    "button":["basic","element"],
+    "text":["textstyling", "textshadow", "animation"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "td":{
+    "button":["basic","element"],
+    "text":["textstyling", "textshadow", "animation"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "hr":{
+    "button":["basic","element"],
+    "container":["contianer", "contianers","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "nav":{
+    "button":["basic","element"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "html":{
+    "button":["basic","element"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "body":{
+    "button":["basic","element"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "header": {
+    "button":["basic","element"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "footer":{
+    "button":["basic","element"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "article":{
+    "button":["basic","element"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "aside":{
+    "button":["basic","element"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  },
+  "section": {
+    "button":["basic","element"],
+    "container":["contianer", "contianers", "background","borderradius","boxsahadow","marginpadding"],
+    "core":["classes"]
+  }
+}
+
+

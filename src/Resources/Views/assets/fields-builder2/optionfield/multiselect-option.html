@@ -1,0 +1,48 @@
+
+	<div class="row formrow form-horizontal m-l-0 m-r-0" data-role="sources" data-sourcestype="multiselect_custom_values">
+	
+		<div class="col-xs-12 studio-collapse-toobar collapse in" id="sources_file">
+			<div class="row ">
+				<div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5  p-l-40">
+					<label  for="enableRequired"> List Sources</label>
+				</div>
+				<div class="col-xs-6 col-md-6 col-lg-6 p-t-10 p-b-10">
+					<select  class="form-control customselect"  data-style="btn-black" data-html="source_type" data-key="info"  data-subkey="jsf" data-selector="list_source" >
+						<option value="custom" >Manual</option>
+						<option value="read_from_path" >URL</option>
+						<option value="upload_source_file" >Upload Source file</option>
+						<option value="get_by_shortcode" >Get By Shortcode</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5  p-l-40">
+					<label  for="enableRequired"> </label>
+				</div>
+				<div class="col-xs-6 col-md-6 col-lg-6 p-t-10 p-b-10 source_files">
+					
+					<div class="input-group " data-list-source-option="custom">
+						<textarea class="form-control text-left" placeholder=""  data-list-source-option-type="multiselect-custom" data-html="list_source_manual" data-key="info"  data-subkey="jsf" >1|Select 1
+2|Select 2
+3|Select 3
+						</textarea>
+					</div>
+					
+					<div class="input-group hide" data-list-source-option="read_from_path">
+						<input type="text" class="form-control " placeholder=""  data-list-source-option-type="multiselect-url" data-html="list_source_url" data-key="info"  data-subkey="jsf">
+					</div>
+					<div class="input-group hide" data-list-source-option="upload_source_file">
+						<input type="text" class="form-control upload_file_ele" readonly data-list-source-option-type="multiselect-upload" data-html="list_source_upload" data-key="info"  data-subkey="jsf">
+						<label class="input-group-btn"> <span class="btn btn-primary upload_file_ele_btn"> Upload
+							<input type="file" style="display: none;" multiple>
+							</span> </label>
+					</div>
+					
+					<div class="input-group hide" data-list-source-option="get_by_shortcode">
+						<input type="text" class="form-control " placeholder=""  data-list-source-option-type="multiselect-get_by_shortcode" data-html="list_source_get_by_shortcode" data-key="info"  data-subkey="jsf">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end Sources --> 

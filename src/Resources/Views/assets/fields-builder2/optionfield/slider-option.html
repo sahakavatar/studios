@@ -1,0 +1,110 @@
+<div class="row b-b-1">
+    <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5 p-l-40">
+        <label for="slider_range">Type</label>
+    </div>
+    <div class="col-xs-6 col-md-6 col-lg-6 p-t-10 p-b-10">
+		<select data-key="info"  data-keyup-action="slider" data-html="slider_type" id="slider_type" name="slider_type" data-style="btn-black" data-selector="slider_type" class="form-control customselect" >
+			<option value="simple" >Simple</option>
+			<option value="range" >Range</option>
+			<option value="ticks" >Ticks</option>
+		</select>
+        
+    </div>
+</div>
+<div class="row b-b-1">
+	<div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5 p-l-40">
+		<label for="slider_min_value">Min Value</label>
+	</div>
+	<div class="col-xs-6 col-md-6 col-lg-6 p-t-10 p-b-10">
+		<input type="text" data-key="info" data-keyup-action="slider"  data-subkey="jsf" data-html="min"  value="0" class="form-control ">
+	</div>
+</div>
+<div class="row b-b-1">
+	<div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5 p-l-40">
+		<label for="slider_max_value">Max Value</label>
+	</div>
+	<div class="col-xs-6 col-md-6 col-lg-6 p-t-10 p-b-10">
+		<input type="text" data-key="info"  data-keyup-action="slider" data-subkey="jsf" data-html="max"  value="100" class="form-control ">
+	</div>
+</div>
+<div data-slider-option-ticks="ticks"  class="hide">
+	<div class="row b-b-1">
+		<div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5 p-l-40">
+			<label for="slider_min_value">Ticks Value</label>
+		</div>
+		<div class="col-xs-6 col-md-6 col-lg-6 p-t-10 p-b-10">
+			<textarea data-key="info" data-keyup-action="slider"  data-subkey="jsf" data-html="ticks"  value="0" class="form-control ">[1, 2, 3]</textarea>
+		</div>
+	</div>
+	<div class="row b-b-1">
+		<div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5 p-l-40">
+			<label for="slider_max_value">Ticks Label</label>
+		</div>
+		<div class="col-xs-6 col-md-6 col-lg-6 p-t-10 p-b-10">
+			<textarea data-key="info" data-keyup-action="slider"  data-subkey="jsf" data-html="ticks-labels"  value="0" class="form-control ">["short", "medium", "long"]</textarea>
+		</div>
+	</div>
+	
+</div>
+<div class="row b-b-1">
+    <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5 p-l-40">
+        <label for="slider_value">Value</label>
+    </div>
+    <div class="col-xs-6 col-md-6 col-lg-6 p-t-10 p-b-10">
+        <input type="text" data-key="info" data-keyup-action="slider"  data-subkey="jsf" data-html="value" id="slider_value" name="slider_value" value="0" class="form-control ">
+    </div>
+</div>
+<div class="row b-b-1">
+    <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5 p-l-40">
+        <label for="slider_step_value">Step</label>
+    </div>
+    <div class="col-xs-6 col-md-6 col-lg-6 p-t-10 p-b-10">
+        <input type="text" data-key="info" data-keyup-action="slider" data-subkey="jsf"  data-html="step" id="slider_step_value" name="slider_step_value" value="1" class="form-control ">
+    </div>
+</div>
+
+<div class="row b-b-1">
+    <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5 p-l-40">
+        <label for="slider_step_value">Orientation</label>
+    </div>
+    <div class="col-xs-6 col-md-6 col-lg-6 p-t-10 p-b-10">
+        <select data-key="info" data-keyup-action="slider"  data-subkey="jsf" data-html="orientation"  data-selector="orientation"  data-style="btn-black" class="form-control customselect" >
+			<option value="horizontal" >Horizontal</option>
+			<option value="vertical" >Vertical</option>
+		</select>
+	</div>
+</div>
+<div class="row b-b-1">
+    <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5 p-l-40">
+        <label for="tooltip">Custom Handlers</label>
+    </div>
+    <div class="col-xs-6 col-md-6 col-lg-6 p-t-10 p-b-10">
+		<button type="button" class="btn  uploadButton" data-icon="iconbutton"> <span class="iconView " data-iconview="LabelIcon"><i class="fa fa-adjust"></i></span> Upload Icon</button>
+		<input class="form-control form-controlblack hide geticonseting" type="text" name="LabelIcon" data-mainkey="labelcontainer"  data-html="LabelIcon" data-key="field" value="fa fa-adjust" >
+									
+    </div>
+</div>
+<div class="row b-b-1">
+    <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5 p-l-40">
+        <label for="slider_step_value">Track High</label>
+    </div>
+    <div class="col-xs-6 col-md-6 col-lg-6 p-t-10 p-b-10">
+		 <div class='input-group colorpicker-component'><input type='text' value='#00AABB' name='color' class='form-control' data-key="info" data-keyup-action="slider" data-html="slider-track-high"/><span class='input-group-addon'><i></i></span></div>
+    </div>
+</div>
+<div class="row b-b-1">
+    <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5 p-l-40">
+        <label for="slider_step_value">Track Low</label>
+    </div>
+    <div class="col-xs-6 col-md-6 col-lg-6 p-t-10 p-b-10">
+       <div class='input-group colorpicker-component'><input type='text' value='#00AABB' name='color' class='form-control' data-key="info" data-keyup-action="slider" data-html="slider-track-low"/><span class='input-group-addon'><i></i></span></div>
+    </div>
+</div>
+<div class="row b-b-1">
+    <div class="col-xs-6 col-md-6 col-lg-3 p-t-10 p-b-10 m-t-5 p-l-40">
+        <label for="slider_step_value">Track Selection </label>
+    </div>
+    <div class="col-xs-6 col-md-6 col-lg-6 p-t-10 p-b-10">
+         <div class='input-group colorpicker-component'><input type='text' value='#00AABB' name='color' class='form-control' data-key="info" data-keyup-action="slider" data-html="slider-selection"/><span class='input-group-addon'><i></i></span></div>
+    </div>
+</div>
