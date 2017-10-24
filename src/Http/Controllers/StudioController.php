@@ -6,7 +6,6 @@ use App\helpers\dbhelper;
 use App\Modules\Framework\Models\Classes;
 use Sahakavatar\Studios\Models\StudioClasses;
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Sahakavatar\Studios\Models\Studios;
